@@ -110,6 +110,11 @@ def refresh_cache(req_attrib, modelMap):
                    "channelType": "IND",
                    "running_tvshows_url": "/forumdisplay.php?f=73",
                    "finished_tvshows_url": "/forumdisplay.php?f=211"},
+                  "Zee Anmol":
+                  {"iconimage":"http://www.lyngsat-logo.com/logo/tv/zz/zee_anmol_in.jpg",
+                   "channelType": "IND",
+                   "running_tvshows_url": "/forumdisplay.php?f=2819",
+                   "finished_tvshows_url": "/forumdisplay.php?f=2935"},
                   "Sony TV":
                   {"iconimage":"http://www.lyngsat-logo.com/logo/tv/ss/set_in.jpg",
                    "channelType": "IND",
@@ -195,6 +200,11 @@ def refresh_cache(req_attrib, modelMap):
                    "channelType": "IND",
                    "running_tvshows_url": "/forumdisplay.php?f=479",
                    "finished_tvshows_url": None},
+                  "Discovery Kids":
+                  {"iconimage":"http://www.lyngsat-logo.com/logo/tv/dd/discovery_kids_us.jpg",
+                   "channelType": "IND",
+                   "running_tvshows_url": "/forumdisplay.php?f=2096",
+                   "finished_tvshows_url": "/forumdisplay.php?f=2340"},                   
                   "Hungama TV":
                   {"iconimage":"http://www.lyngsat-logo.com/logo/tv/hh/hungama.jpg",
                    "channelType": "IND",
@@ -204,6 +214,11 @@ def refresh_cache(req_attrib, modelMap):
                   {"iconimage":"http://www.lyngsat-logo.com/logo/tv/cc/cartoon_network_in.jpg",
                    "channelType": "IND",
                    "running_tvshows_url": "/forumdisplay.php?f=509",
+                   "finished_tvshows_url": None},
+                  "WWE":
+                  {"iconimage":"http://www.lyngsat-logo.com/logo/tv/ww/world_wrestling_entertainment.jpg",
+                   "channelType": "IND",
+                   "running_tvshows_url": "/forumdisplay.php?f=303",
                    "finished_tvshows_url": None},
                   "Star Pravah":
                   {"iconimage":"http://www.lyngsat-logo.com/logo/tv/ss/star_pravah.jpg",
@@ -849,6 +864,7 @@ def __prepareVideoLink__(video_link):
         
         video_id = re.compile('(id|url|v|si)=(.+?)/').findall(video_url + '/')[0][1]                
         
+<<<<<<< HEAD
         if re.search('dm(\d*).php', video_url, flags=re.I) or (re.search('(desiserials|tellyserials|serialreview|tvnewz|bigbangreviews|reviewxpress|[a-z]*).(tv|com|net)/', video_url, flags=re.I) and not video_id.isdigit() and re.search('dailymotion', video_source, flags=re.I)):
             new_video_url = 'http://www.dailymotion.com/video/' + video_id + '_'
         elif re.search('(flash.php|fp.php|wire.php|pw.php)', video_url, flags=re.I) or (re.search('(desiserials|serialreview|tellyserials|tvnewz|bigbangreviews|reviewxpress|[a-z]*).(tv|com|net)/', video_url, flags=re.I) and video_id.isdigit() and re.search('flash', video_source, flags=re.I)):
@@ -903,7 +919,7 @@ def __parseDesiHomeUrl__(video_url):
     return video_link
 
 
-PREFERRED_DIRECT_PLAY_ORDER = [Dailymotion.VIDEO_HOSTING_NAME, Playwire.VIDEO_HOSTING_NAME, CloudEC.VIDEO_HOST_NAME, VideoWeed.VIDEO_HOST_NAME, Tune_pk.VIDEO_HOSTING_NAME, YouTube.VIDEO_HOSTING_NAME, Nowvideo.VIDEO_HOST_NAME, Novamov.VIDEO_HOST_NAME]
+PREFERRED_DIRECT_PLAY_ORDER = [Dailymotion.VIDEO_HOSTING_NAME, Playwire.VIDEO_HOSTING_NAME, VideoWeed.VIDEO_HOST_NAME, CloudEC.VIDEO_HOST_NAME, Tune_pk.VIDEO_HOSTING_NAME, YouTube.VIDEO_HOSTING_NAME, Nowvideo.VIDEO_HOST_NAME, Novamov.VIDEO_HOST_NAME]
 
 def __findPlayNowStream__(new_items):
 #     if AddonContext().get_addon().getSetting('autoplayback') == 'false':
