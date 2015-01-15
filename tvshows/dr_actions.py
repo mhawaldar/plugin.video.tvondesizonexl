@@ -58,7 +58,14 @@ LIVE_CHANNELS = {"9XM":{"iconimage":"http://www.lyngsat-logo.com/logo/tv/num/9x_
                  "channelUrl": "http://d2949g19l28x5t.cloudfront.net/9x/smil:9xjhakaas.smil/playlist.m3u8"},
                  "9X Jalwa":{"iconimage":"http://www.lyngsat-logo.com/logo/tv/num/9x_jalwa.png",
                  "channelType": "IND",
-                 "channelUrl": "http://d2949g19l28x5t.cloudfront.net/9x/smil:9xjalwa.smil/playlist.m3u8"}}
+                 "channelUrl": "http://d2949g19l28x5t.cloudfront.net/9x/smil:9xjalwa.smil/playlist.m3u8"},
+                 "AajTak":{"iconimage":"http://upload.wikimedia.org/wikipedia/en/b/bb/Aaj_Tak_logo.png",
+                 "channelType": "IND",
+                 "channelUrl": "http://d1vfuy3zwrxiut.cloudfront.net/Live/_definst_/sweetbcha1novD77_W_250.sdp/manifest.m3u8"},
+                 "India News":{"iconimage":"http://datastore05.rediff.com/h1500-w1500/thumb/6C6A6A767238/7hfb2xj20azy91os.D.0.New-Logo.png",
+                 "channelType": "IND",
+                 "channelUrl": "http://d1vfuy3zwrxiut.cloudfront.net/Live/_definst_/sweetbcha1novD148_W_250.sdp/manifest.m3u8"}
+}
 
 BASE_WSITE_URL = base64.b64decode('aHR0cDovL3d3dy5kZXNpcnVsZXoubmV0')
     
